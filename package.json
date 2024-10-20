@@ -2,7 +2,18 @@
   "name": "vite-environment-api-sandbox",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --app",
+    "start": "node dist/ssr/server.js"
+  },
   "devDependencies": {
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3",
     "vite": "^6.0.0-beta.3"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.2",
+    "hono": "^4.6.5"
   }
 }
